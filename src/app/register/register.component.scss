@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    height: 100%;
+    color: white;
+    font-family: "Calibre", "Helvetica Neue", "Helvetica", sans-serif;
+	font-size: 16px;
+	font-smooth: auto;
+	font-weight: 300;
+	line-height: 1.5;
+}
+.co-main {
+  background: lighten(#B73E35,10%);
+  max-width: 23.4375rem;
+  min-height: 41.6875rem;
+  height: fit-content;
+  padding: 0;
+}
+.card-signin {
+    background: lighten(#B73E35,10%);
+    border: 0;
+}
+.card-header{
+    width: 100%;
+    text-align: center;
+    color: white;
+    width: 100%;
+    vertical-align: middle;
+    background-color: #4054B2;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+}
+.card-body {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.card-title {
+    margin-bottom: 30px;
+}
+.create-acc {
+    margin-top: 25px;
+}
+.already-mem {
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+}
+h2 {
+    font-size: 1.85rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.mountain-container.row {
+    margin-bottom: 10px;
+}
+input {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 0 0.5rem;
+    padding: 0.875rem 0.5rem;
+    border-radius: 5px;
+    
+    &.half {
+        width: 49%;
+        display: inline-block;
+        float: left;
+        
+        &:nth-of-type(1) {
+            margin-right: 2%;
+        }
+    }
+    
+    &:focus {
+        box-shadow: 0 0 10px rgba(black,0.3);
+    }
+}
+
+svg {
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 15px darken(#B73E35,10%);
+    
+    .mountains {
+        fill: #4054B2;
+    }
+    
+    .circle {
+        fill: white;
+    }
+}
+
+.button {
+    position: relative;
+    width: 100%;
+    padding: 0.625rem 0.5rem;
+    background-color: darken(#B73E35,15%);
+    box-shadow: 0 0 30px rgba(black,0.2);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.cardfooter {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    transition: all 0.25s linear;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #B73E35;
+    /*bottom: 0px;
+    position: absolute;*/
+    cursor: pointer;
+}
+button.signup {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    transition: all 0.25s linear;
+    background-color: #B73E35;
+    cursor: pointer;
+    width: -webkit-fill-available;
+    border: 0;
+}
+.errors {
+    /*position: absolute;
+    bottom: -400px;*/
+}

@@ -1,0 +1,23 @@
+<header>
+  Hoşgeldiniz {{user.firstName}} {{user.lastName}} <span class="logout">
+    <button type="button" class="btn btn-danger" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</button>
+  </span>
+</header>
+<body>
+  <div class="users-container">
+    <div class="users" *ngFor="let item of users; let ind=index">
+      <div class="blocks user-fname">
+        {{item.firstName}}
+      </div>
+      <div class="blocks user-lname">
+        {{item.lastName}}
+      </div>
+      <div class="blocks user-email">
+        {{item.email}}
+      </div>
+      <div class="blocks user-createddate">
+        {{item.createdDate}}
+      </div>
+    </div>
+  </div>
+</body>

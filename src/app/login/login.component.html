@@ -1,0 +1,96 @@
+<div class="login-container">
+  <nav class="header">
+    <div class="header-logo col-sm-6">
+      <h2>NEMESIS</h2>
+    </div>
+    <div class="col-sm-6 right-span">
+      <span class="header-right-span"> <span class="hidden-mobile hiddex-xs">Hesabınız Yok mu?</span>
+        <a class="btn btn-danger" routerlink="/register" href="/register">Hesap Oluştur.!</a> </span>
+
+    </div>
+
+  </nav>
+  <div class="body">
+    <div class="container" id="content">
+      <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
+              <h1 class="txt-color-red login-header-big">Nemesis</h1>
+      
+              <div class="hero">
+                <div class="pull-left login-desc-box-l">
+                  <h4 class="paragraph-header">It's Okay to be Smart. Experience the simplicity of SmartAdmin,
+                    everywhere you go!</h4>
+      
+                  <div class="login-app-icons">
+                    <a class="btn btn-danger btn-sm" routerlink="/dashboard/analytics" href="#/dashboard/analytics">Frontend Template</a>
+                    <a class="btn btn-danger btn-sm" routerlink="/smartadmin/app-layouts" href="#/smartadmin/app-layouts">Find out more</a>
+                  </div>
+                </div>
+                <img alt="" class="pull-right display-image" src="/assets/images/iphoneview.png" style="width:210px">
+              </div>
+              <div class="about-container row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h5 class="about-heading">About SmartAdmin - Are you up to date?</h5>
+      
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam, eaque ipsa.
+                  </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h5 class="about-heading">Not just your average template!</h5>
+      
+                  <p>
+                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+                    nobis est eligendi voluptatem accusantium!
+                  </p>
+                </div>
+              </div>
+            </div>
+          <!-- ////////////  \\\\\\\\\\\\ -->
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                <div class="well no-padding">
+                  <form class="smart-form client-form">
+                    <header>
+                      Giriş
+                    </header>
+                    <fieldset>
+                      <section>
+                        <label class="label">E-mail</label>
+                        <label class="input"> <i class="icon-append fa fa-user"></i>
+                          <input data-email="" [(ngModel)]="email" data-message-email="Please enter a VALID email address" data-message-required="Please enter your email address" data-required="" data-smart-validate-input="" name="email" type="email">
+                          <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i>
+                            Please enter email address/username</b></label>
+                      </section>
+                      <section>
+                        <label class="label">Şifre</label>
+                        <label class="input"> <i class="icon-append fa fa-lock"></i>
+                          <input data-maxnlength="20" [(ngModel)]="password" data-message="Please enter your email password" data-minlength="3" data-required="" data-smart-validate-input="" name="password" type="password">
+                          <b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Enter
+                            your password</b> </label>
+        
+                        <div class="note">
+                          <a routerlink="/forgot-password" href="#/forgot-password">Şifrenizi mi unuttunuz?</a>
+                        </div>
+                      </section>
+                      <section>
+                        <label class="checkbox">
+                          <input checked="" name="remember" type="checkbox">
+                          <i></i>Bilgilerimi Kaydet</label>
+                      </section>
+                    </fieldset>
+                    <footer>
+                        <div *ngIf="errorMsg" class="alert alert-danger">
+                            <div>{{errorMsg}}</div>
+                        </div>
+                      <button class="btn btn-primary" (click)="login()">
+                        Sign in
+                      </button>
+                    </footer>
+                  </form>
+                </div>
+              </div>
+      </div>
+    </div>
+  </div>
+</div>
